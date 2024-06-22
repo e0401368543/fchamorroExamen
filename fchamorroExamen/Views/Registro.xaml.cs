@@ -22,7 +22,7 @@ public partial class Registro : ContentPage
     {
 
         montoIngresado = Convert.ToDouble(txtMontoInicial.Text);
-        resultado = (monto - montoIngresado) * 1.04;
+        resultado = (monto - montoIngresado)/4+ 1500*0.4;
         txtPagoMensual.Text =Convert.ToString(resultado);
 
     }

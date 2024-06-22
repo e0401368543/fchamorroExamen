@@ -75,11 +75,13 @@
                 HorizontalOptions="Center"
                 FontSize="18"
                 Grid.Row="3"
-                Grid.Column="1" />
+                Grid.Column="0" />
 
 
             <Entry x:Name="txtMontoInicial"
                 Placeholder="Ingresa Monto inicial"
+                   Grid.Row="3"
+                    Grid.Column="1" 
                    Keyboard="Numeric"
                    MaxLength="10"
               />

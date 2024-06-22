@@ -38,7 +38,7 @@ public partial class Login : ContentPage
         {
 
 
-            //  DisplayAlert("Alerta", "Usuario no existe"+ users[i]+" :pos: " +i, "Ok");
+             DisplayAlert("Alerta", "Usuario no existe"+ matrixUsers[i,0]+" :pos: " +i, "Ok");
 
 
             if (txtUsaurio.Text != matrixUsers[i,0])
@@ -73,16 +73,67 @@ public partial class Login : ContentPage
             }
             else
             {
-                DisplayAlert("Alerta", "Usuario incorrectos", "Ok");
+                DisplayAlert("Alerta", "Dato Incorrecto", "Ok");
             }
         }
 
     }
 
-    private void btnRegistro_Clicked(object sender, EventArgs e)
+    private void btnIngreso_Clicked_1(object sender, EventArgs e)
     {
-        //Navigation.PushAsync(new vPantallaPrincipal());
-        Navigation.PushAsync(new Registro(txtUsaurio.Text));
+        int i = 0;
 
+        if (string.IsNullOrEmpty(txtUsaurio.Text) || string.IsNullOrEmpty(txtContraseña.Text))
+        {
+            DisplayAlert("Alerta", "Ingrese el usuario/contraseña", "Cancel");
+            return;
+        }
+
+
+        while (i <2 ) //matrixUsers.GetLength(0)
+        {
+
+
+            DisplayAlert("Alerta", "Usuario no existe" + matrixUsers[i, 0] + " :pos: " + i, "Ok");
+
+
+            if (txtUsaurio.Text != matrixUsers[i, 0])
+                i += 1;
+            else { 
+                break;
+            }
+
+        }
+
+        if (i == matrixUsers.GetLength(0))
+        {
+            DisplayAlert("Alerta", "Dato Incorrecto", "Ok");
+            return;
+        }
+
+        if (txtUsaurio.Text == matrixUsers[i, 0])
+        {
+            if (txtContraseña.Text == matrixUsers[i, 1])
+            {
+                Navigation.PushAsync(new Registro(txtUsaurio.Text));
+
+            }
+            else
+                DisplayAlert("Alerta", "Dato Incorrecto", "Ok");
+
+        }
+        else
+        {
+
+
+            if (user == txtUsaurio.Text && pasword == txtUsaurio.Text)
+            {
+                Navigation.PushAsync(new Registro(txtUsaurio.Text));
+            }
+            else
+            {
+                DisplayAlert("Alerta", "Dato Incorrecto", "Ok");
+            }
+        }
     }
 }

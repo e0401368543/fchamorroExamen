@@ -23,6 +23,8 @@ public partial class Resumen : ContentPage
         //,string pais, double montoinicial, double pagomensual, double pagototal
         ) { 
         lblNombreR.Text = nombre;
+        lblApellido.Text = apellido;    
+        lblEdad.Text = edad;
     
     }
 

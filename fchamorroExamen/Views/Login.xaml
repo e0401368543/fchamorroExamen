@@ -51,17 +51,10 @@
                  />
         </Grid>
         <Button x:Name="btnIngreso"
-      Text="Iniciar Sesion"
-       FontSize="18"
-       
-      Clicked="btnIngreso_Clicked"
-      />
-        <Button x:Name="btnRegistro"
-      FontSize="18"
-       
-      Text="Registro"
-      Clicked="btnRegistro_Clicked"
-  />
+          Text="Iniciar Sesion"
+           FontSize="18"       
+          Clicked="btnIngreso_Clicked_1"
+          />       
 
 
     </VerticalStackLayout>

@@ -41,7 +41,29 @@
                 HorizontalOptions="Center"
                FontSize="18"
                Grid.Row="0"
-               Grid.Column="0" />
+               Grid.Column="1" />
+
+            <Label Text="apellido"
+       HorizontalOptions="Center"
+      FontSize="18"
+      Grid.Row="1"
+      Grid.Column="0" />
+            <Label x:Name="lblApellido" Text="apellido"
+            HorizontalOptions="Center"
+           FontSize="18"
+           Grid.Row="1"
+           Grid.Column="1" />
+
+            <Label Text="edad"
+         HorizontalOptions="Center"
+        FontSize="18"
+        Grid.Row="2"
+        Grid.Column="0" />
+            <Label x:Name="lblEdad" 
+              HorizontalOptions="Center"
+             FontSize="18"
+             Grid.Row="2"
+             Grid.Column="1" />
 
 
         </Grid>
