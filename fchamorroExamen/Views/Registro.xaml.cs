@@ -22,15 +22,19 @@ public partial class Registro : ContentPage
     {
 
         montoIngresado = Convert.ToDouble(txtMontoInicial.Text);
-        resultado = (monto - montoIngresado)/4+ 1500*0.4;
+        resultado = (monto - montoIngresado)/4+ 1500*0.04;
         txtPagoMensual.Text =Convert.ToString(resultado);
 
     }
 
     private void btnResumen_Clicked(object sender, EventArgs e)
     {
+        string ciudad= pkCiudad.SelectedItem.ToString();
+        string pais = pkPais.SelectedItem.ToString();
+
+
         Resumen resumen = new Resumen(usuario);
-        resumen.datosEstudiante(txtNombre.Text,txtApellido.Text,txtEdad.Text);
+        resumen.datosEstudiante(txtNombre.Text,txtApellido.Text,txtEdad.Text, ciudad, pais,Convert.ToDouble(txtMontoInicial.Text), Convert.ToDouble(txtPagoMensual.Text));
         Navigation.PushAsync(resumen);
 
 

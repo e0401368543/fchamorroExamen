@@ -65,6 +65,72 @@
              Grid.Row="2"
              Grid.Column="1" />
 
+            <Label Text="Fecha"
+                 HorizontalOptions="Center"
+                FontSize="18"
+                Grid.Row="3"
+                Grid.Column="0" />
+                            <Label x:Name="lblFecha" 
+                      HorizontalOptions="Center"
+                     FontSize="18"
+                     Grid.Row="3"
+                     Grid.Column="1" />
+
+            <Label Text="Ciudad"
+             HorizontalOptions="Center"
+            FontSize="18"
+            Grid.Row="4"
+            Grid.Column="0" />
+            <Label x:Name="lblCiudad" 
+                  HorizontalOptions="Center"
+                 FontSize="18"
+                 Grid.Row="4"
+                 Grid.Column="1" />
+
+            <Label Text="Pais"
+                 HorizontalOptions="Center"
+                FontSize="18"
+                Grid.Row="5"
+                Grid.Column="0" />
+            <Label x:Name="lblPais" 
+                  HorizontalOptions="Center"
+                 FontSize="18"
+                 Grid.Row="5"
+                 Grid.Column="1" />
+
+            <Label Text="Monto Inicial"
+                 HorizontalOptions="Center"
+                FontSize="18"
+                Grid.Row="6"
+                Grid.Column="0" />
+                    <Label x:Name="lblMontoInicial" 
+                  HorizontalOptions="Center"
+                 FontSize="18"
+                 Grid.Row="6"
+                 Grid.Column="1" />
+
+            <Label Text="Pago Mensual"
+                         HorizontalOptions="Center"
+                        FontSize="18"
+                        Grid.Row="7"
+                        Grid.Column="0" />
+            <Label x:Name="lblMensual" 
+              HorizontalOptions="Center"
+             FontSize="18"
+             Grid.Row="7"
+             Grid.Column="1" />
+
+            <Label Text="Pago Total"
+             HorizontalOptions="Center"
+            FontSize="18"
+            Grid.Row="8"
+            Grid.Column="0" />
+            <Label x:Name="lbltotal" 
+              HorizontalOptions="Center"
+             FontSize="18"
+             Grid.Row="8"
+             Grid.Column="1" />
+
 
         </Grid>
     </VerticalStackLayout>
