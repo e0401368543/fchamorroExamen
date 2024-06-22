@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fchamorroExamen.Views.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout Spacing="20"
+            Padding="20">
+        <Label 
+            Text="RESUMEN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label x:Name="lblUsuario" 
+             FontSize="22"
+             TextColor="Blue"
+             HorizontalTextAlignment="Center"/>
+
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre"
+                   HorizontalOptions="Center"
+                  FontSize="18"
+                  Grid.Row="0"
+                  Grid.Column="0" />
+            <Label x:Name="lblNombreR" Text="Nombre"
+                HorizontalOptions="Center"
+               FontSize="18"
+               Grid.Row="0"
+               Grid.Column="0" />
+
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

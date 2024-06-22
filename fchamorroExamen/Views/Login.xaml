@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fchamorroExamen.Views.Login"
+             Title="Login">
+    <VerticalStackLayout Spacing="20"
+             Padding="25">
+        <Label 
+         Text="Inicio de Sesión"
+         HorizontalTextAlignment="Center" 
+         FontSize="20"
+         TextColor="Red"/>
+        <Image Source="logouisrael.png"
+         WidthRequest="100"/>
+
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="USUARIO"
+            HorizontalOptions="Center"
+            FontSize="18"
+            TextColor="Black"
+            Grid.Row="0"
+            Grid.Column="0" />
+
+            <Entry x:Name="txtUsaurio"
+             Placeholder="INGRESE USUARIO"
+             FontSize="18"
+             Grid.Row="1"
+             Grid.Column="0"       
+           />
+            <Label Text="CONTRASEÑA"
+            HorizontalOptions="Center"
+            FontSize="18"
+            Grid.Row="0"
+            Grid.Column="1"
+                 />
+            <Entry x:Name="txtContraseña"
+                FontSize="18"
+                 Grid.Row="1"
+                 Grid.Column="1"
+             Placeholder="INGRESE Contraseña"
+                 IsPassword="true"
+                 />
+        </Grid>
+        <Button x:Name="btnIngreso"
+      Text="Iniciar Sesion"
+       FontSize="18"
+       
+      Clicked="btnIngreso_Clicked"
+      />
+        <Button x:Name="btnRegistro"
+      FontSize="18"
+       
+      Text="Registro"
+      Clicked="btnRegistro_Clicked"
+  />
+
+
+    </VerticalStackLayout>
+</ContentPage>
